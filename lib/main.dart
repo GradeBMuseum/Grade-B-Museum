@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grade_b_museum/screen/intro_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,19 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              "Under Construction",
-              style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
-            ),
-          ],
-        ),
-      ),
+      home: IntroScreen(),
     );
   }
 }
