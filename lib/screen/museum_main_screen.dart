@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grade_b_museum/screen/under_construnction_screen.dart';
 
 class MuseumMainScreen extends StatefulWidget {
   const MuseumMainScreen({super.key});
@@ -10,16 +11,6 @@ class MuseumMainScreen extends StatefulWidget {
 class _MuseumMainScreenState extends State<MuseumMainScreen> {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            "Under Construction",
-            style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
-          ),
-        ],
-      ),
-    );
+    return UnderConstrunctionScreen();
   }
 }
